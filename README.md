@@ -7,9 +7,9 @@ caffe_ocr是一个对现有主流ocr算法研究实验性的项目，目前实�
   4. densenet修改了对Reshape没有正确响应的bug，实现了对变长输入预测的支持。<br>
   5. 增加transpose_layer、reverse_layer，实现对CNN feature map与lstm输入shape的适配<br>
 ## 编译
-   1. 安装opencv,boost,cuda,其它依赖库在3rdparty下（包含debug版的lib:http://pan.baidu.com/s/1nvIFojJ）<br>
+   1. 安装opencv,boost,cuda,其它依赖库在thirdparth,下载路径https://pan.baidu.com/s/1ZTp8iWszMPrZ718w_UCZ5Q，  
    2. caffe-vsproj下为vs2015的工程，配置好依赖库的路径即可编译，编译后会在tools_bin目录下生成训练程序caffe.exe<br>
-   3. 相关的依赖dll可从百度网盘下载（http://pan.baidu.com/s/1boOiscJ）<br>
+   3. 相关的依赖dll可从百度网盘下载（https://pan.baidu.com/s/1ZTp8iWszMPrZ718w_UCZ5Q）<br>
 ## 测试
    1. 编译caffe-vsproj/libClassification,修改自examples\cpp_classification，实现了模型加载、预测等基本功能。<br>
    2. 编译caffe-vsproj/ocr_test，实现了中文、英文ocr模型的测试功能，英文ocr包含了直接预测和词典辅助预测（英文词典文件examples/ocr/lexicon.txt）<br>
